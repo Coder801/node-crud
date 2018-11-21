@@ -1,0 +1,21 @@
+html
+  head
+    title Rest API Example
+    link(href="/style.css" rel="stylesheet")
+  body
+    if message
+      p.message= message
+      
+    if users
+      ul.suggestions
+        li 
+          span.id ID
+          span.name Name
+          span.position Position
+          span.status Status
+        each item in users
+          li 
+            span.id #{item.id}
+            span.name #{item.name}
+            span.position #{item.position}
+            span.status #{item.status}

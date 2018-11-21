@@ -1,0 +1,100 @@
+body {
+  box-sizing: border-box;
+  background:#ffc600;
+  font-weight: 200;
+  font-weight: normal;
+  font-size: 20px;
+  font-family:'helvetica neue';
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+input {
+  padding:20px;
+  width: 100%;
+}
+
+.search-form {
+  margin:50px auto;
+  max-width:400px;
+}
+
+input.search {
+  position: relative;
+  top: 10px;
+  left: -10%;
+  z-index: 2;
+  margin: 0;
+  width: 120%;
+  outline:0;
+  border: 10px solid #F7F7F7;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.19);
+  text-align: center;
+  font-size: 40px;
+}
+
+
+.suggestions {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  width: 50%;
+  /*perspective:20px;*/
+}
+.suggestions li {
+  margin:0;
+  padding:20px;
+  border-bottom: 1px solid #D8D8D8;
+  background:white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.14);
+  list-style: none;
+  text-transform: capitalize;
+  transition:background 0.2s;
+}
+.suggestions li span {
+  display: inline-block;
+}
+.suggestions li:first-child {
+  font-weight: bold;
+}
+.suggestions li .id {
+  width: 10%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.suggestions li .name {
+  width: 35%;
+}
+
+.suggestions li .position {
+  width: 45%;
+}
+
+.suggestions li .status {
+  width: 10%;
+}
+
+span.population {
+  font-size: 15px;
+}
+
+.hl {
+  background:#ffc600;
+}
+
+p.message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  margin: 30px 0;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #fff;
+  color: black;
+  text-align: center;
+  font-size: 28px;
+  transform: translate(-50%, -50%);
+}
